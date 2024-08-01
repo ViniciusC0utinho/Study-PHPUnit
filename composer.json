@@ -9,7 +9,7 @@
         }
     },
     "scripts": {
-        "phpunit": "vendor/bin/phpunit"
+        "test": "./vendor/bin/phpunit --testdox --colors"
     },
     "authors": [
         {

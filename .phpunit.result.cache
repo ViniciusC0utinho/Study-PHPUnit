@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Vinicius\\PhpUnit\\ProductTest::test_is_defined_name":7},"times":{"Vinicius\\PhpUnit\\ProductTest::test_is_defined_name":0.014,"Vinicius\\PhpUnit\\ProductTest::test_name_is_set":0.004,"Vinicius\\PhpUnit\\ProductTest::test_slug_is_set":0,"Vinicius\\PhpUnit\\ProductTest::name_is_set":0.004,"Vinicius\\PhpUnit\\ProductTest::slug_is_set":0}}
