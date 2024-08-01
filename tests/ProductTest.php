@@ -18,16 +18,16 @@ class ProductTest extends TestCase
 
         $product->setName('PS5');
 
-        $this->assertEquals('PS5', $product->getName());
+        $this->assertEquals('Ps5', $product->getName());
     }
 
     #[Test]
-    public function slug_is_set(): void
+    public function price_is_set(): void
     {
         $product = new Product;
 
-        $product->setSlug('console-ps5-promo');
+        $product->setPrice('10.00');
 
-        $this->assertEquals('console-ps5-promo', $product->getSlug());
+        $this->assertEquals(10.00, $product->getPrice());
     }
 }

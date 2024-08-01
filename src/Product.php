@@ -4,27 +4,48 @@ namespace Vinicius\PhpUnit;
 
 class Product
 {
-    protected $name;
 
-    protected $slug;
+    public function __construct(
+        protected ?string $id = null,
+        protected ?string $name = null,
+        protected ?float $price = null,
+    ) {
+        $this->setId(uniqid());
+    }
+
+    public function getId(): string
+    {
+        return $this->id;
+    }
 
     public function getName(): string
     {
         return $this->name;
     }
 
-    public function getSlug(): string
+    public function getPrice(): float
     {
-        return $this->slug;
+        return $this->price;
     }
 
-    public function setName(string $name): void
+    public function setId(string $id): self
     {
-        $this->name = $name;
+        $this->id = $id;
+
+        return $this;
     }
 
-    public function setSlug(string $slug): void
+    public function setName(string $name): self
     {
-        $this->slug = $slug;
+        $this->name = mb_convert_case($name, MB_CASE_TITLE, 'UTF-8');
+
+        return $this;
+    }
+
+    public function setPrice(float $price): self
+    {
+        $this->price = $price;
+
+        return $this;
     }
 }
