@@ -8,6 +8,9 @@
             "Vinicius\\PhpUnit\\": "src/"
         }
     },
+    "scripts": {
+        "phpunit": "vendor/bin/phpunit"
+    },
     "authors": [
         {
             "name": "Vinicius Coutinho",
